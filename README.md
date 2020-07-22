@@ -89,11 +89,11 @@ A massive thank you to our community sponsors!
   - [x] autoprefixer
 - [x] Setup development script
 - [x] Setup production script
-- [x] Get font from Google Font
+- [ ] Get font from Google Font
 - [ ] Setup css variables
-  - [x] color schemes
-  - [x] color gradient
-  - [x] font sizes
+  - [ ] color schemes
+  - [ ] color gradient
+  - [ ] font sizes
   - [ ] breakpoints
 - [ ] Sketch out html skeleton/ Draw out boxes for the layout
 - [ ] Give meaningful css class names
