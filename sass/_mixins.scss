@@ -1,0 +1,21 @@
+@mixin mainBg {
+  content: '';
+  display: block;
+  height: 50%;
+  width: 150px;
+  position: absolute;
+  z-index: -1;
+
+  @media screen and (min-width: $xsBp) {
+    width: 220px;
+  }
+
+  @media screen and (min-width: $lgBp) {
+    height: 80%;
+    width: 400px;
+  }
+}
+
+@mixin mainBgRadius {
+  border-bottom-right-radius: var(--mainBgRadius);
+}

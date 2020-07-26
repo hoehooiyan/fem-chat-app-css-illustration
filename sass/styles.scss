@@ -1,3 +1,7 @@
-body {
-  background: pink;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@import './global';
+@import './mixins';
+@import './background';
+@import './chat';
+@import './text';

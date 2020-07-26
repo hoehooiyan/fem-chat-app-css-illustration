@@ -1,0 +1,70 @@
+:root {
+  --normalFontWeight: 400;
+  --mediumFontWeight: 500;
+  --boldFontWeight: 700;
+
+  --mainBgRadius: 200px;
+
+  // gradient color
+  --gradientMagenta: hsl(293, 100%, 63%);
+  --gradientViolet: hsl(264, 100%, 61%);
+
+  // site background
+  --mainBgGradient: linear-gradient(
+    var(--gradientMagenta),
+    var(--gradientViolet)
+  );
+
+  // the top of the chat
+  --topChatGradient: linear-gradient(
+    to right,
+    var(--gradientViolet),
+    var(--gradientMagenta)
+  );
+
+  // chat on the left side
+  --chatContentGradient: linear-gradient(
+    to right,
+    var(--gradientViolet),
+    var(--gradientMagenta)
+  );
+
+  // primary color
+  --colorSiteTitle: hsl(271, 36%, 24%);
+  --colorSiteDescription: hsl(270, 7%, 64%);
+  --colorChatStatus: hsl(276, 100%, 81%);
+  --colorChatLeftContent: hsl(276, 55%, 52%);
+  --colorChatRightContent: hsl(271, 15%, 43%);
+  --colorChatPlaceholderText: hsl(206, 6%, 79%);
+
+  // secondary color
+  --colorWhite: hsl(0, 0%, 100%);
+  --colorAppBg: hsl(270, 20%, 96%);
+  --colorSubmitBtnBg: hsl(271, 36%, 24%);
+  --color-RadioBtnOutline: hsl(289, 100%, 72%);
+}
+
+$xsBp: 480px;
+$smBp: 600px;
+$mdBp: 768px;
+$lgBp: 990px;
+$xlBP: 1280px;
+$maxBp: 1440px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+}

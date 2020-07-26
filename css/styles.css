@@ -1,2 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --normalFontWeight: 400;
+  --mediumFontWeight: 500;
+  --boldFontWeight: 700;
+  --mainBgRadius: 200px;
+  --gradientMagenta: hsl(293, 100%, 63%);
+  --gradientViolet: hsl(264, 100%, 61%);
+  --mainBgGradient: linear-gradient(
+    var(--gradientMagenta),
+    var(--gradientViolet)
+  );
+  --topChatGradient: linear-gradient(
+    to right,
+    var(--gradientViolet),
+    var(--gradientMagenta)
+  );
+  --chatContentGradient: linear-gradient(
+    to right,
+    var(--gradientViolet),
+    var(--gradientMagenta)
+  );
+  --colorSiteTitle: hsl(271, 36%, 24%);
+  --colorSiteDescription: hsl(270, 7%, 64%);
+  --colorChatStatus: hsl(276, 100%, 81%);
+  --colorChatLeftContent: hsl(276, 55%, 52%);
+  --colorChatRightContent: hsl(271, 15%, 43%);
+  --colorChatPlaceholderText: hsl(206, 6%, 79%);
+  --colorWhite: hsl(0, 0%, 100%);
+  --colorAppBg: hsl(270, 20%, 96%);
+  --colorSubmitBtnBg: hsl(271, 36%, 24%);
+  --color-RadioBtnOutline: hsl(289, 100%, 72%); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
 body {
-  background: pink; }
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem; }
+
+body::before {
+  content: '';
+  display: block;
+  height: 50%;
+  width: 150px;
+  position: absolute;
+  z-index: -1;
+  background-image: var(--mainBgGradient);
+  border-bottom-right-radius: var(--mainBgRadius);
+  top: 0;
+  left: 0; }
+  @media screen and (min-width: 480px) {
+    body::before {
+      width: 220px; } }
+  @media screen and (min-width: 990px) {
+    body::before {
+      height: 80%;
+      width: 400px; } }
+
+body::after {
+  content: '';
+  display: block;
+  height: 50%;
+  width: 150px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--colorAppBg);
+  border-top-left-radius: var(--mainBgRadius);
+  bottom: 0;
+  right: 0; }
+  @media screen and (min-width: 480px) {
+    body::after {
+      width: 220px; } }
+  @media screen and (min-width: 990px) {
+    body::after {
+      height: 80%;
+      width: 400px; } }

@@ -1,0 +1,17 @@
+body {
+  &::before {
+    @include mainBg;
+    background-image: var(--mainBgGradient);
+    border-bottom-right-radius: var(--mainBgRadius);
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    @include mainBg;
+    background-color: var(--colorAppBg);
+    border-top-left-radius: var(--mainBgRadius);
+    bottom: 0;
+    right: 0;
+  }
+}
